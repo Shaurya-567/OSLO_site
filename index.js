@@ -20,6 +20,7 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  
   setTimeout(showSlides, 3000); 
 }
 
@@ -31,6 +32,8 @@ function plusSlides(n) {
 }
 
 function currentSlide(n) {
+  let slideDoorExit=1;
+  slideDoorExit++;
  showSlides23(slideIndex = n);
 }
 
